@@ -3,7 +3,6 @@ AppKeys
 
 Simple helper for keyboard shortcuts
 
-
 AppKeys.registerDown([Arr], function(e) {...}, boolean);
 AppKeys.registerUp([Arr], function(e) {...}, boolean); 
 AppKeys.registerPress([Arr], function(e) {...}, boolean);
