@@ -13,7 +13,7 @@
 */
 !function() {
   window.AppKeys = new function() {
-  	var _ = this;
+		var _local = this;
 		this.registryDown = {};
 		this.registryUp = {};
 		this.registryPress = {};
@@ -39,23 +39,23 @@
 		}
 		
 		window.onkeydown = function(e) {
-			fire(e, _.registryDown);
+			fire(e, _local.registryDown);
 		}
 		window.onkeyup = function(e) {
-			fire(e, _.registryUp);
+			fire(e, _local.registryUp);
 		}
 		window.onkeypress = function(e) {
-			fire(e, _.registryPress);
+			fire(e, _local.registryPress);
 		}
 		
 		this.registerDown = function(keyArr, func, meta) {
-			register(_.registryDown, keyArr, func, meta);
+			register(_local.registryDown, keyArr, func, meta);
 		}
 		this.registerUp = function(keyArr, func, meta) {
-			register(_.registryUp, keyArr, func, meta);
+			register(_local.registryUp, keyArr, func, meta);
 		}
 		this.registerPress = function(keyArr, func, meta) {
-			register(_.registryPress, keyArr, func, meta);
+			register(_local.registryPress, keyArr, func, meta);
 		}
 	}
 }();
